@@ -7,12 +7,12 @@ sendMail = (req, res) => {
     const transporter = mailer.createTransport({
       service: "Gmail",
       auth: {
-        user: "tingchen2222@gmail.com",
+        user: "",
         pass: password,
       },
     });
     const mailOptions = {
-      to: "tingchen2222@gmail.com",
+      to: "",
       subject: name + ":" + email,
       text: message,
     };
